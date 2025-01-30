@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(178, 202, 206, 0.927);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        .ok{
+            border: 2px solid black;
+            padding:20px;
+            height: 200px;
+            width: 270px;
+            text-align: center;
+            margin-top: 100px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px black;
+            background-color: rgb(255, 255, 255);
+
+        }
+        .but{
+            padding: 10px;
+            margin: 10px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px black;
+
+        }
+        p{
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="ok">
+    <div class="">
+        <p id="num_count">0</p>
+    <button class="but" onclick="incre()">Increment"+"</button>
+    <!-- <button class="but" id="num_count">0</button> -->
+    <button class="but" onclick="decre()">Decrement"-"</button>
+</div>
+<div>
+    <button class="but" onclick="reset()">RESET</button>
+    </div>
+</div>
+    <script>
+        let num=0;
+        console.log(num);
+        function decre(){
+            num-=1;
+            console.log(num);
+            document.getElementById("num_count").innerText=num;
+        }
+        function incre(){
+            num+=1;
+            console.log(num);
+            document.getElementById("num_count").innerText=num;
+        }
+        function reset(){
+            num=0;
+            document.getElementById("num_count").innerText=num;
+        }
+    </script>
+
+</body>
+</html>
