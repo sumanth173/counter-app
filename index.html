@@ -10,6 +10,7 @@
             text-align: center;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
         }
         .ok{
             border: 2px solid black;
@@ -21,6 +22,8 @@
             border-radius: 10px;
             box-shadow: 0px 0px 10px 0px black;
             background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-wrap: wrap;
 
         }
         .but{
@@ -39,10 +42,15 @@
             color: rgb(0, 0, 0);
 
         }
+        h1{
+            display: flex;
+            justify-content: center;
+        }
         
     </style>
 </head>
 <body>
+    <h1>Counter app</h1>
     <div class="ok">
     <div class="">
         <p id="num_count">0</p>
