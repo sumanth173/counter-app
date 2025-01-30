@@ -8,9 +8,7 @@
         body{
             background-color: rgba(178, 202, 206, 0.927);
             text-align: center;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+            
         }
         .ok{
             border: 2px solid black;
@@ -23,6 +21,7 @@
             box-shadow: 0px 0px 10px 0px black;
             background-color: rgb(255, 255, 255);
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
 
         }
@@ -43,14 +42,24 @@
 
         }
         h1{
+            
             display: flex;
             justify-content: center;
+            text-align: center;
+            height: 10%;
+            align-items: center;
+        }
+        .con{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         
     </style>
 </head>
 <body>
     <h1>Counter app</h1>
+    <div class="con">
     <div class="ok">
     <div class="">
         <p id="num_count">0</p>
@@ -61,6 +70,7 @@
 <div>
     <button class="but" onclick="reset()">RESET</button>
     </div>
+</div>
 </div>
     <script>
         let num=0;
